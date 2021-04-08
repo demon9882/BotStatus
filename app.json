@@ -1,0 +1,44 @@
+{
+    "name": "BotStatus",
+    "description": "To check your bot status after every 2 hours",
+    "keywords": [
+        "telegram",
+        "Bot",
+        "python",
+        "bot"
+    ],
+    "repository": "https://github.com/demon9882/BotStatus",
+    "website": "https://telegram.dog/death898",
+    "env": {
+        "APP_ID": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "SESSION": {
+            "description": "Your Telethon String Session"
+        },
+        "BOTS": {
+            "description": "Your Bots username without @"
+        },
+        "CHANNEL_ID": {
+            "description": "Your channel id get this from @MissRose_bot",
+            "required": false
+        },
+        "MESSAGE_ID": {
+            "description": "Example:https://t.me/c/1444534047/1464 Last four digits are message id"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
