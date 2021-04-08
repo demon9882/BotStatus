@@ -27,7 +27,7 @@
             "required": false
         },
         "MESSAGE_ID": {
-            "description": "Example:https://t.me/c/1444534047/1464 Last four digits are message id"
+            "description": "Example:https://t.me/c/1444534047/1464 Last four digits are your message id"
         }
     },
     "buildpacks": [
